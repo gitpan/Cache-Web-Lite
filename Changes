@@ -1,4 +1,7 @@
 Revision history for Perl extension Cache::Web::Lite
 
+0.02  Thu May 20 2004
+	- Fixed a critical bug in the constructor
+
 0.01  Sat Mar 20 2004
 	- original version

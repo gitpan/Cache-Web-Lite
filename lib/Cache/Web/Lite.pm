@@ -14,7 +14,7 @@ use HTML::Location ();
 
 use vars qw{$VERSION};
 BEGIN {
-	$VERSION = '0.01';
+	$VERSION = '0.02';
 }
 
 # Define assertions
@@ -74,7 +74,7 @@ sub set_validate_callback { Carp::croak "validate_callback is not implemented in
 
 sub cache_root { $_[0]->{cache_location}->path }
 
-sub _set_cache_root {
+sub _set_cache_location {
 	my $self = _SELF(shift);
 	my $location = isa( ref $_[0], 'HTML::Location' ) ? shift
 		: Carp::croak "Constructor must be given a HTML::Location object for the cache_root option";
